@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" type="text/css">
+    <title>Document</title>
+</head>
+<body id="b">
+    <style type="text/css">
+        .rojo {
+            width: 100px; 
+            height: 100px; 
+            border: 3px solid #555;
+            background: red;
+        }
+        
+        .verde {
+            width: 100px; 
+            height: 100px; 
+            border: 3px solid #555;
+            background: #19db39;
+        }
+        .azul {
+            width: 100px; 
+            height: 100px; 
+            border: 3px solid #555;
+            background: #117edd;
+        }
+        .amarillo{
+            width: 100px; 
+            height: 100px; 
+            border: 3px solid #555;
+            background: yellow;
+        }
+        .blanco {
+            width: 100px; 
+            height: 100px; 
+            border: 3px solid #555;
+            background: white;
+        }
+</style>
+    <div class="rojo" id="rojo"></div> 
+    <div class="verde" id="verde"></div> 
+    <div class="azul" id="azul"></div> 
+    <div class="amarillo" id="amarillo"></div> 
+    <div class="blanco" id="blanco"></div> 
+
+  
+    <script>
+        document.getElementById("azul").addEventListener("mouseover",  function(){
+           document.getElementById("b").style.backgroundColor="blue";
+        },false);
+      
+        document.getElementById("verde").addEventListener("mouseover", function (){
+            document.getElementById("b").style.backgroundColor="green";
+        },false);
+       
+        document.getElementById("rojo").addEventListener("mouseover",function (){
+            document.getElementById("b").style.backgroundColor="red";
+        },false);
+        
+        document.getElementById("blanco").addEventListener("mouseover", function (){
+            document.getElementById("b").style.backgroundColor="white";
+        },false);
+       
+        document.getElementById("amarillo").addEventListener("mouseover", function (){
+            document.getElementById("b").style.backgroundColor="yellow";
+        },false);
+       
+
+
+        
+    </script>
+
+
+</body>
+</html>
