@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir lineas</title>
+</head>
+<body>
+    <ul id="lista">
+        
+        <li>
+            Primera linea de la lista
+        </li>
+        <li>
+            Segunda linea de la lista
+        </li>
+        <li>
+            Tercera linea de la lista
+        </li>
+        <li>
+            Cuarta linea de la lista
+        </li>
+    </ul>
+    <input type="radio" id="arriba" name="añadir" value="Arriba">Arriba</input><br>
+    <input type="radio" id="abajo" name="añadir" value="Abajo">Abajo</input>
+    <input type="button" id="enviar" value="Inserta linea" ></input>
+    <input type="text" id="text" name="texto" value="texto de linea"> </input>
+</body>
+    <script>
+        document.getElementById("enviar").addEventListener("click",cambiot,false)
+        function cambiot(){
+            document.getElementById("text");
+            texto=text.value;
+            li=document.createElement("li")
+            li.innerText=texto;
+            cambio=document.getElementById("lista");
+
+            if(document.getElementById("arriba").checked){
+                cambio=lista.insertBefore(li, lista.firstChild);
+            }else if(document.getElementById("abajo").checked){
+                cambio.appendChild(li);
+            }
+            
+        }
+
+    </script>
+    
+</body>
+</html>
